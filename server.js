@@ -56,6 +56,7 @@ const server = http.createServer(async (request, response) => {
             }
             break
         default:
+            // throw new Error('Что-то пошло не так!');
             response.write('404 Not Found')
             response.end()
     }
